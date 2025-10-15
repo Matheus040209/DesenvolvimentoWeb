@@ -1,0 +1,23 @@
+.box {
+    background-color: blue;
+    padding: 10px;
+  }
+  
+  p {
+    color: yellow;
+    margin: 0;
+    padding: 0;
+  }
+
+  #outer-box{
+    border: 10px solid purple;
+  }
+
+  .white-text{
+    color: white;
+    background-color: red;
+    width: 573px;
+    height: 40px;
+    line-height: 35px;
+    
+  }
