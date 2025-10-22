@@ -1,7 +1,6 @@
 body{
     text-align: center;
-    background-color: blanchedalmond;
-    display: block;
+    background-color: rgb(206, 204, 201);
 }
 
 main{
@@ -11,25 +10,21 @@ main{
 }
 
 img{
-    height: 300px;
+    width: 100%;
+    border-radius: 5px;
 }
 
-.noticia1{
-    float: left;
-    width: 50%;
-    display: block;
-}
 
-.noticia2{
+.noticias{
     float: left;
-    display: block;
     width: 50%;
-}
+    background-color: white;
+    margin: 10px;
+    display: block;
+    border: 10px transparent;
+    box-shadow: 0 0 5px black;
 
-.noticia3{
-    float: left;
-    display: block;
-    width: 50%;
+
 }
 
 p{
@@ -39,4 +34,15 @@ p{
 
 footer{
     clear: both;
+}
+
+aside{
+    background-color: rgb(224, 222, 222);
+}
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+
 }
