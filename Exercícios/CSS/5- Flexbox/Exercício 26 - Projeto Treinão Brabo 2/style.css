@@ -1,0 +1,89 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(136, 138, 138);
+    color: white;
+    padding: 10px 40px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: blue;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    min-height: 60vh;
+  }
+
+  .servicos{
+    text-align: center;
+  }
+  .cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 5px;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+h3{
+    margin-left: 15px;
+}
+  footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  img{
+    width: 250px;
+  }
+  
+.hero p{
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    header nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .servicos {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  
