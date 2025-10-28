@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Layout</title>
+  <style>
+    body {
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+.container {
+  display: grid;
+  width: 748px;
+  height: 748px;
+  background-color: #141313;
+  border: 10px solid black;
+  gap: 9px;
+
+  /* layout baseado na imagem */
+  grid-template-columns: 320px 198px 153px 50px;
+  grid-template-rows: 414px 155px 130px 20px;
+}
+
+/* BLOCO VERMELHO */
+.red {
+  background-color: #d40920;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+/* ÁREA BRANCA GRANDE SUPERIOR DIREITA */
+.white1 {
+  background-color: #f2f2f2;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+
+/* ÁREA BRANCA ABAIXO DO VERMELHO */
+.white2 {
+  background-color: #f2f2f2;
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+}
+
+/* ÁREA BRANCA ENTRE AMARELO E AZUL */
+.white3 {
+  background-color: #f2f2f2;
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
+
+/* BLOCO AZUL */
+.blue {
+  background-color: #0341ae;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+/* BLOCO AMARELO */
+.yellow {
+  background-color: #f9d01e;
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+/* BLOCO PRETO */
+.black {
+  background-color: #232323;
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
+
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="red"></div>
+    <div class="white1"></div>
+    <div class="white2"></div>
+    <div class="white3"></div>
+    <div class="blue"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+  </div>
+</body>
+</html>
