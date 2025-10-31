@@ -5,6 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto StartEdu</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+      @media (min-width: 769px){
+        main{
+           text-align: center;
+           color: rgb(79, 78, 78);
+       }
+       
+       main a{
+           background-color: gainsboro;
+           border-radius: 6px;
+           box-shadow: 3px 3px 3px;
+           text-decoration: none;
+       }
+       
+       .sobre{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 53px;
+           margin-top: 100px;
+       }
+       .sobre p{
+           margin: 30px;
+       }
+       
+       .sobre img{
+           height: 350px;
+           border-radius: 10px;
+           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);;
+       }
+       
+       .destaques{
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr;
+       }
+       .cards{
+           gap: 45px;
+           background-color: #A8E6CF;
+           border-radius: 10px;
+           margin: 30px;
+           margin-top: 120px;
+           padding: 20px;
+       }
+       
+       .cards:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #60A5FA;
+       }
+      }
+
+      @media (max-width: 768px){
+ 
+       
+       main a{
+           background-color: gainsboro;
+           border-radius: 6px;
+           box-shadow: 3px 3px 3px;
+           text-decoration: none;
+       }
+       
+       .sobre{
+           display: grid;
+           grid-template-columns: 1fr;
+           gap: 53px;
+           margin-top: 100px;
+       }
+       .sobre p{
+           margin: 30px;
+       }
+       
+       .sobre img{
+           height: 350px;
+           border-radius: 10px;
+           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+       }
+       
+       .destaques{
+           display: grid;
+           grid-template-columns: 1fr;
+       }
+       .cards{
+           gap: 45px;
+           background-color: #A8E6CF;
+           border-radius: 10px;
+           margin: 30px;
+           margin-top: 120px;
+           padding: 20px;
+       }
+       
+      }
+    </style>
 </head>
 <body>
     <header>
@@ -23,9 +113,10 @@
 
     <div class="sobre">
 
-        <p>A Startedu é uma empresa de educação inovadora dedicada a transformar o aprendizado em experiências significativas e acessíveis. Nossa missão é capacitar estudantes, profissionais e instituições a desenvolver habilidades essenciais para o século XXI, combinando tecnologia, metodologias ativas e conteúdos atualizados.</p>
-
-        <img src="./assets/img/imagem2.jpeg" alt="Sobre">
+        <p>A Quero Educação nasceu com o propósito de transformar a forma como as pessoas aprendem. Somos uma plataforma de educação digital que une tecnologia, inovação e metodologia moderna para tornar o conhecimento mais acessível, dinâmico e envolvente.
+Aqui, acreditamos que aprender deve ser uma experiência contínua e inspiradora. Por isso, desenvolvemos soluções que conectam estudantes, professores e conteúdos de qualidade em um ambiente digital interativo.
+Nosso compromisso é impulsionar o aprendizado do futuro — um aprendizado sem barreiras, adaptado às necessidades de cada pessoa e preparado para os desafios do mundo em constante mudança.</p>
+        <img src="./assets/img/sobre.jpeg" alt="Sobre">
     </div>
 
     <div class="destaques">
@@ -42,7 +133,7 @@
             </div>
             <div class="cards">
                 <h2>Suporte individual</h2>
-                <p>Cada aluno é único, e acreditamos que o aprendizado também deve ser. Oferecemos acompanhamento personalizado, tirando dúvidas, ajustando o ritmo das aulas e criando planos de estudo que se adaptam às suas necessidades. Com nosso suporte individual, você nunca aprende sozinho.</p>
+                <p>Cada aluno é único, e a5creditamos que o aprendizado também deve ser. Oferecemos acompanhamento personalizado, tirando dúvidas, ajustando o ritmo das aulas e criando planos de estudo que se adaptam às suas necessidades. Com nosso suporte individual, você nunca aprende sozinho.</p>
 
             </div>
         </div>
@@ -57,10 +148,10 @@
               </div>
               <div class="footer">
                 <a href="#"
-                  ><img src="../icons/facebook_icon.png" alt="Facebook"
+                  ><img src="./assets/img/facebook_icon.png" alt="Facebook"
                 /></a>
                 <a href="#"
-                  ><img src="../icons/instagram.jpg" alt="Instagram"
+                  ><img src="./assets/img/instagram_icon.png" alt="Instagram"
                 /></a>
               </div>
             </div>

@@ -6,6 +6,18 @@
            
        }
        
+     main{
+        text-align: center;
+        color: rgb(79, 78, 78);
+       }
+
+      main a{
+        background-color: gainsboro;
+        border-radius: 6px;
+        box-shadow: 3px 3px 3px;
+        text-decoration: none;
+       }
+
        header{
            display: flex;
            justify-content: space-between;
@@ -25,65 +37,34 @@
        
        }
        
-       a:hover{
-          text-decoration: underline;
+       header a:hover{
+        text-decoration: underline;
+       }
+
+       main a:hover{
+          transform: scale(1.05);
+        box-shadow: 0 0 10px #60A5FA;
        }
        
-       main{
-           text-align: center;
-           color: rgb(79, 78, 78);
-       }
-       
-       main a{
-           background-color: gainsboro;
-           border-radius: 6px;
-           box-shadow: 3px 3px 3px;
-           text-decoration: none;
-       }
-       
-       .sobre{
-           display: grid;
-           grid-template-columns: 1fr 1fr;
-           gap: 53px;
-           margin-top: 100px;
-       }
-       .sobre p{
-           margin: 30px;
-       }
-       
-       .sobre img{
-           height: 350px;
-           border-radius: 10px;
-           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);;
-       }
-       
-       .destaques{
-           display: grid;
-           grid-template-columns: 1fr 1fr 1fr;
-       }
-       .cards{
-           gap: 45px;
-           background-color: #A8E6CF;
-           border-radius: 10px;
-           margin: 30px;
-           margin-top: 120px;
-           padding: 20px;
-       }
-       
-       footer{
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           color: white;
-           background-color: black;
-           text-align: center;
-       }
-       
-       
-       footer img{
-           height: 25px;
-           width: 25px;
-       }
+
+     footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    padding: 3px;
+    
+}
+.footer img {
+    height: 25px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #60A5FA;
+}
+
 
     }
 
@@ -118,59 +99,23 @@
           text-decoration: underline;
        }
        
-       main{
-           text-align: center;
-           color: rgb(79, 78, 78);
-       }
        
-       main a{
-           background-color: gainsboro;
-           border-radius: 6px;
-           box-shadow: 3px 3px 3px;
-           text-decoration: none;
-       }
-       
-       .sobre{
-           display: grid;
-           grid-template-columns: 1fr;
-           gap: 53px;
-           margin-top: 100px;
-       }
-       .sobre p{
-           margin: 30px;
-       }
-       
-       .sobre img{
-           height: 350px;
-           border-radius: 10px;
-           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-       }
-       
-       .destaques{
-           display: grid;
-           grid-template-columns: 1fr;
-       }
-       .cards{
-           gap: 45px;
-           background-color: #A8E6CF;
-           border-radius: 10px;
-           margin: 30px;
-           margin-top: 120px;
-           padding: 20px;
-       }
-       
-       footer{
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           color: white;
-           background-color: black;
-           text-align: center;
-       }
-       
-       
-       footer img{
-           height: 25px;
-           width: 25px;
-       }
+    footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    padding: 3px;
+    
+}
+.footer img {
+    height: 25px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #60A5FA;
+}
+
 }
