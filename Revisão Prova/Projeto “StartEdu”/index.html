@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +7,31 @@
     <link rel="stylesheet" href="./style.css">
     <style>
       @media (min-width: 769px){
-        main{
-           text-align: center;
-           color: rgb(79, 78, 78);
-       }
        
        main a{
            background-color: gainsboro;
+           padding: 10px;
            border-radius: 6px;
            box-shadow: 3px 3px 3px;
            text-decoration: none;
+           text-align: center;
        }
        
        .sobre{
            display: grid;
+           align-items: center;
+           justify-items: center;
            grid-template-columns: 1fr 1fr;
            gap: 53px;
            margin-top: 100px;
        }
        .sobre p{
-           margin: 30px;
+           margin: 30px 30px 30px 160px;
        }
        
        .sobre img{
            height: 350px;
            border-radius: 10px;
-           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);;
        }
        
        .destaques{
@@ -44,7 +43,7 @@
            background-color: #A8E6CF;
            border-radius: 10px;
            margin: 30px;
-           margin-top: 120px;
+           margin-top: 150px;
            padding: 20px;
        }
        
@@ -56,12 +55,20 @@
 
       @media (max-width: 768px){
  
-       
+       main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+
        main a{
            background-color: gainsboro;
            border-radius: 6px;
+           padding: 10px;
            box-shadow: 3px 3px 3px;
            text-decoration: none;
+           text-align: center;
+
        }
        
        .sobre{
@@ -89,7 +96,7 @@
            background-color: #A8E6CF;
            border-radius: 10px;
            margin: 30px;
-           margin-top: 120px;
+           margin-top: 150px;
            padding: 20px;
        }
        
@@ -98,7 +105,7 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="./assets/img/logo.png" alt="Logo">
+        <img class="logo" src="./assets/img/logo.png" alt="Logo site Quero Educação">
         <nav>
             <a href="./index.html">Início</a>
             <a href="./cursos.html">Cursos</a>
@@ -109,14 +116,14 @@
     <main>
         <h1>Aprenda. Crie. Evolua.</h1>
         <a href="./cursos.html">Ver cursos</a>
-    </main>
 
     <div class="sobre">
 
-        <p>A Quero Educação nasceu com o propósito de transformar a forma como as pessoas aprendem. Somos uma plataforma de educação digital que une tecnologia, inovação e metodologia moderna para tornar o conhecimento mais acessível, dinâmico e envolvente.
+        <p>A <b>Quero Educação</b> nasceu com o propósito de transformar a forma como as pessoas aprendem. Somos uma plataforma de educação digital que une tecnologia, inovação e metodologia moderna para tornar o conhecimento mais acessível, dinâmico e envolvente.
 Aqui, acreditamos que aprender deve ser uma experiência contínua e inspiradora. Por isso, desenvolvemos soluções que conectam estudantes, professores e conteúdos de qualidade em um ambiente digital interativo.
 Nosso compromisso é impulsionar o aprendizado do futuro — um aprendizado sem barreiras, adaptado às necessidades de cada pessoa e preparado para os desafios do mundo em constante mudança.</p>
-        <img src="./assets/img/sobre.jpeg" alt="Sobre">
+        <img src="./assets/img/sobre.jpeg" alt="Duas crianças utilizando um notebook">
+
     </div>
 
     <div class="destaques">
@@ -133,25 +140,25 @@ Nosso compromisso é impulsionar o aprendizado do futuro — um aprendizado sem 
             </div>
             <div class="cards">
                 <h2>Suporte individual</h2>
-                <p>Cada aluno é único, e a5creditamos que o aprendizado também deve ser. Oferecemos acompanhamento personalizado, tirando dúvidas, ajustando o ritmo das aulas e criando planos de estudo que se adaptam às suas necessidades. Com nosso suporte individual, você nunca aprende sozinho.</p>
+                <p>Cada aluno é único, e acreditamos que o aprendizado também deve ser. Oferecemos acompanhamento personalizado, tirando dúvidas, ajustando o ritmo das aulas e criando planos de estudo que se adaptam às suas necessidades. Com nosso suporte individual, você nunca aprende sozinho.</p>
 
             </div>
         </div>
-
+ </main>
         <footer class="footer">
             <div class="footer-content">
               <div class="footer-copyright">
                 <p>
-                  &copy; <span id="2025"></span> StartEdu. Todos os direitos
+                  &copy; <span id="2025"></span> Quero Educação. Todos os direitos
                   reservados.
                 </p>
               </div>
               <div class="footer">
                 <a href="#"
-                  ><img src="./assets/img/facebook_icon.png" alt="Facebook"
+                  ><img src="./assets/img/facebook_icon.png" alt="Logo Facebook"
                 /></a>
                 <a href="#"
-                  ><img src="./assets/img/instagram_icon.png" alt="Instagram"
+                  ><img src="./assets/img/instagram_icon.png" alt="Logo Instagram"
                 /></a>
               </div>
             </div>

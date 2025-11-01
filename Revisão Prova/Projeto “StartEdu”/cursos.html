@@ -1,27 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos</title>
     <link rel="stylesheet" href="./style.css">
     <style>
+        @media (max-width: 768px){
+
+            h1{
+                text-align: center;
+            }
+
+            .grade-cursos{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+        }
+
+        .cursos{
+            background-color: rgb(211, 209, 209);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+            0 2px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            margin: 30px;
+            padding: 20px;
+        }
+
+
+         .cursos:hover{
+            box-shadow: 0 0 10px #60A5FA;
+            transform: scale(1.05);
+         }
+
+        .cursos img{
+            height: 120px;
+            width: 200px;
+            align-self: center;
+        }
+
+        .cursos button{
+            height: 30px;
+            width: 160px;
+            align-self: center;
+            border: transparent;
+            border-radius: 10px;
+        }
+
+        .cursos button:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 10px #60A5FA;
+        }
+
+        }
+
+
+        @media (min-width: 769px){
+            
         .grade-cursos{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         }
 
         .cursos{
-            background-color: #A8E6CF;
+            background-color: rgb(211, 209, 209);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+            0 2px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             border-radius: 10px;
             margin: 30px;
             padding: 20px;
         }
+
+        .cursos:hover{
+            box-shadow: 0 0 10px #60A5FA;
+            transform: scale(1.05);
+        }
+
+        .cursos img{
+            height: 120px;
+        }
+
+        .cursos button{
+            height: 30px;
+            width: 160px;
+            align-self: center;
+            border: transparent;
+            border-radius: 10px;
+        }
+
+        .cursos button:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 10px #60A5FA;
+        }
+
+    }
     </style>
 </head>
 <body>
         <header>
-        <img class="logo" src="./assets/img/logo.png" alt="Logo">
+        <img class="logo" src="./assets/img/logo.png" alt="Logo site Quero Educação">
         <nav>
             <a href="./index.html">Início</a>
             <a href="./cursos.html">Cursos</a>
@@ -35,37 +117,68 @@
         <div class="grade-cursos">
             <div class="cursos">
                 <h2>Mente Digital</h2>
+                <img src="./assets/img/curso1.jpg" alt="Cérebro">
                 <p>Desperte o seu potencial no mundo conectado!
 O curso Mente Digital foi criado para ajudar você a compreender como a tecnologia transforma nossa forma de pensar, aprender e criar. Através de aulas dinâmicas e práticas, você vai desenvolver uma mentalidade inovadora, aprender a usar ferramentas digitais no dia a dia e descobrir como se adaptar às mudanças do futuro. Ideal para quem quer dominar o universo digital com confiança e criatividade.</p>
+                <button>Saiba mais</button>
 
             </div>
             <div class="cursos">
                 <h2>Habilidades do Futuro</h2>
+                <img src="./assets/img/cursos2.jpg" alt="Pessoas trabalhando">
                 <p>Prepare-se para o mercado que está em constante evolução.
 Neste curso, você vai aprender as competências mais valorizadas do século XXI, como pensamento crítico, colaboração, comunicação e resolução de problemas. Por meio de desafios, dinâmicas e estudos de caso, você será estimulado a desenvolver uma mentalidade flexível e inovadora — habilidades essenciais para qualquer carreira moderna.</p>
+                <button>Saiba mais</button>
 
             </div>
             <div class="cursos">
                 <h2>Aprender a Aprender</h2>
+                <img src="./assets/img/curso3.jpg" alt="Aprendizado">
                 <p>Torne-se o protagonista do seu próprio aprendizado.
 O curso Aprender a Aprender ensina técnicas de estudo, gestão do tempo e estratégias para reter e aplicar o conhecimento de forma eficaz. Você vai entender como funciona o processo de aprendizado, aprender métodos como mapas mentais, anotações inteligentes e estudo ativo — tudo para estudar melhor, com mais foco e menos esforço.</p>
+                <button>Saiba mais</button>
             </div>
             <div class="cursos">
                 <h2>Transformação Tech</h2>
+                <img src="./assets/img/curso4.jpg" alt="Tecnologia">
                 <p>Descubra o poder da tecnologia e como ela molda o futuro.
 O curso Transformação Tech é uma introdução ao universo digital, abordando temas como programação, inteligência artificial, automação e segurança de dados. Você vai compreender como as tecnologias emergentes estão mudando o mundo e como se preparar para as novas oportunidades do mercado digital.</p>
+                <button>Saiba mais</button>
             </div>
             <div class="cursos">
                 <h2>Empreenda-se</h2>
+                <img src="./assets/img/curso5.jpg" alt="Mente empreendeora">
                 <p>Transforme suas ideias em ações que geram impacto.
 Mais do que um curso sobre negócios, Empreenda-se é uma jornada de autoconhecimento e inovação. Aqui, você aprende a desenvolver uma mentalidade empreendedora, criar projetos do zero e transformar desafios em oportunidades. Ideal para quem sonha em empreender, inovar ou se destacar em qualquer profissão.</p>
+                <button>Saiba mais</button>
             </div>
             <div class="cursos">
                 <h2>Comunicação Sem Fronteiras</h2>
+                <img src="./assets/img/curso6.jpg" alt="Comunicação">
                 <p>Conecte-se, inspire e comunique com propósito.
 No curso Comunicação Sem Fronteiras, você vai aprimorar suas habilidades de comunicação oral e digital, aprendendo a se expressar com clareza e impacto. São abordadas técnicas de oratória, storytelling, empatia e presença online — tudo para que você se comunique com confiança em qualquer ambiente, seja presencial ou virtual.</p>
+                <button>Saiba mais</button>
             </div>
         </div>
     </main>
+
+    <footer class="footer">
+            <div class="footer-content">
+              <div class="footer-copyright">
+                <p>
+                  &copy; <span id="2025"></span> Quero Educação. Todos os direitos
+                  reservados.
+                </p>
+              </div>
+              <div class="footer">
+                <a href="#"
+                  ><img src="./assets/img/facebook_icon.png" alt="Facebook"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/img/instagram_icon.png" alt="Instagram"
+                /></a>
+              </div>
+            </div>
+          </footer>
 </body>
 </html>

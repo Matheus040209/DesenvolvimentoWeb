@@ -1,11 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Contato</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+
+
+        @media (max-width: 768px){
+
+            h1{
+                text-align: center;
+            }
+
+
+
+            form{
+            display: flex;
+            justify-self: center;
+            flex-direction: column;
+            width: 400px;
+            padding: 20px;
+            background-color: rgb(211, 209, 209);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+            0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        label{
+            margin: 8px;
+        }
+
+        .submit{
+            border: 2px black;
+        }
+
+
+        }
+        @media (min-width: 769px){
+            
+            form{
+            display: flex;
+            justify-self: center;
+            flex-direction: column;
+            width: 400px;
+            padding: 20px;
+            background-color: rgb(211, 209, 209);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+            0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        label{
+            margin: 8px;
+        }
+
+        .submit{
+            border: 2px black;
+        }
+
+    }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <img class="logo" src="./assets/img/logo.png" alt="Logo">
+        <nav>
+            <a href="./index.html">Início</a>
+            <a href="./cursos.html">Cursos</a>
+            <a href="./contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Fale conosco</h1>
+
+            <form action="#" method="post">
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="assunto">Assunto</label>
+      <input type="text" id="assunto" name="assunto" required>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button class="submit" type="submit">Enviar Mensagem</button>
+    </form>
+    </main>
+
+    <footer class="footer">
+            <div class="footer-content">
+              <div class="footer-copyright">
+                <p>
+                  &copy; <span id="2025"></span> Quero Educação. Todos os direitos
+                  reservados.
+                </p>
+              </div>
+              <div class="footer">
+                <a href="#"
+                  ><img src="./assets/img/facebook_icon.png" alt="Facebook"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/img/instagram_icon.png" alt="Instagram"
+                /></a>
+              </div>
+            </div>
+          </footer>
 </body>
 </html>
