@@ -129,7 +129,7 @@ form{
     justify-self: center;
     flex-direction: column;
     width: 400px;
-    padding: 20px;
+    padding: 30px;
     background-color: rgb(211, 209, 209);
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
@@ -317,7 +317,10 @@ label{
         box-shadow: 0 0 10px #878788;
        }
     
-    
+       main h1{
+        padding: 30px;
+       }
+
     header{
         background-color: #FFFFFF;
         display: flex;
@@ -372,7 +375,6 @@ label{
         color: rgb(255, 255, 255);
         background-color: #5f6161;
         border-radius: 10px;
-        padding: 10px;
         width: 380px;
         justify-self: center;
         padding: 25px;
@@ -409,6 +411,7 @@ label{
         flex-direction: column;
         width: 400px;
         padding: 20px;
+        margin: 40px;
         background-color: rgb(211, 209, 209);
         border-radius: 10px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
