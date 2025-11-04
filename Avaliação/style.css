@@ -1,0 +1,424 @@
+@media (min-width: 1025px) {
+
+
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    font-family: sans-serif
+}
+
+main{
+    text-align: center;
+    color: rgb(56, 55, 55);
+    flex: 1;
+   }
+
+   main a{
+    color: black;
+    background-color: #60A5FA;
+    border-radius: 6px;
+    box-shadow: 0px 0px 6px rgb(12, 12, 12);
+    text-decoration: none;
+    padding: 6px;
+    
+
+   }
+
+   main a:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #878788;
+   }
+
+
+header{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+header img{
+    height: 80px;
+}
+
+header a{
+    padding: 7px;
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: underline;
+    color: rgb(63, 67, 187);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;           
+  }
+  
+.logo img {
+    width: auto;
+  }
+
+    .logo h1 {
+    font-size: 27px;   
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    padding: 3px;
+    align-self: flex-end;
+}
+
+.footer img {
+    height: 25px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #60A5FA;
+}
+
+
+.sobre{
+    margin: 100px;
+    color: rgb(255, 255, 255);
+    background-color: #5f6161;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 6px 6px 6px rgb(136, 135, 135);
+}
+
+.grade-produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.produtos{
+    background-color: #60A5FA;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+    0 2px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.produtos img{
+    height: 200px;
+    width: 270px;
+    align-self: center;
+}
+
+form{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    background-color: rgb(211, 209, 209);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+    0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+label{
+    margin: 8px;
+}
+
+.submit{
+    border: 2px black;
+}
+
+}
+
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body{
+        background-color: whitesmoke;
+        font-family: sans-serif
+    }
+    
+    main{
+        text-align: center;
+        color: rgb(56, 55, 55);
+    
+       }
+    
+       main a{
+        color: black;
+        background-color: #60A5FA;
+        border-radius: 6px;
+        box-shadow: 5px 5px 5px rgb(136, 135, 135);
+        text-decoration: none;
+        padding: 6px;
+        
+    
+       }
+    
+       main a:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 10px #878788;
+       }
+    
+    
+    header{
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+    }
+    
+    header img{
+        height: 80px;
+    }
+    
+    header a{
+        padding: 7px;
+        color: black;
+        text-decoration: none;
+    }
+    
+    header a:hover{
+        text-decoration: underline;
+        color: rgb(63, 67, 187);
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;           
+      }
+      
+      .logo img {
+        width: auto;
+      }
+    
+      .logo h1 {
+        font-size: 27px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+    footer{
+        color: white;
+        background-color: black;
+        text-align: center;
+        width: 100%;
+        padding: 3px;
+        align-self: flex-end;
+        margin-top: 342px;
+    }
+    
+    .footer img {
+        height: 25px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    
+    .footer img:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px #60A5FA;
+    }
+    
+    
+    .sobre{
+        margin: 100px;
+        color: rgb(255, 255, 255);
+        background-color: #5f6161;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 6px 6px 6px rgb(136, 135, 135);
+    }
+    
+    .grade-produtos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .produtos{
+        background-color: #60A5FA;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+        0 2px 6px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        margin: 30px;
+        padding: 20px;
+    }
+    
+    .produtos img{
+        height: 200px;
+        width: 270px;
+        align-self: center;
+    }
+    
+    form{
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        width: 400px;
+        padding: 20px;
+        background-color: rgb(211, 209, 209);
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+        0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    
+    label{
+        margin: 8px;
+    }
+    
+    .submit{
+        border: 2px black;
+    }
+  }
+
+  @media (max-width: 600px) {
+    body{
+        background-color: whitesmoke;
+        font-family: sans-serif
+    }
+    
+    main{
+        text-align: center;
+        color: rgb(56, 55, 55);
+    
+       }
+    
+       main a{
+        color: black;
+        background-color: #60A5FA;
+        border-radius: 6px;
+        box-shadow: 5px 5px 5px rgb(136, 135, 135);
+        text-decoration: none;
+        padding: 6px;
+        
+    
+       }
+    
+       main a:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 10px #878788;
+       }
+    
+    
+    header{
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+    }
+    
+    header img{
+        height: 80px;
+    }
+    
+    header a{
+        padding: 7px;
+        color: black;
+        text-decoration: none;
+    }
+    
+    header a:hover{
+        text-decoration: underline;
+        color: rgb(63, 67, 187);
+    }
+    
+    .logo h1{
+        display: none;
+    }
+
+    footer{
+        color: white;
+        background-color: black;
+        text-align: center;
+        width: 100%;
+        padding: 3px;
+        align-self: flex-end;
+        margin-top: 342px;
+    }
+    
+    .footer img {
+        height: 25px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    
+    .footer img:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px #60A5FA;
+    }
+    
+    
+    .sobre{
+        margin: 100px;
+        color: rgb(255, 255, 255);
+        background-color: #5f6161;
+        border-radius: 10px;
+        padding: 10px;
+        width: 380px;
+        justify-self: center;
+        padding: 25px;
+        box-shadow: 6px 6px 6px rgb(136, 135, 135);
+    }
+    
+    .grade-produtos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    .produtos{
+        background-color: #60A5FA;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+        0 2px 6px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        margin: 30px;
+        padding: 20px;
+    }
+    
+    .produtos img{
+        height: 200px;
+        width: 270px;
+        align-self: center;
+    }
+    
+    form{
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        width: 400px;
+        padding: 20px;
+        background-color: rgb(211, 209, 209);
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+        0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    
+    label{
+        margin: 8px;
+    }
+    
+    .submit{
+        border: 2px black;
+    }
+  }
