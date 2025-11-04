@@ -59,7 +59,7 @@ header a:hover{
 .logo {
     display: flex;
     align-items: center;
-    gap: 9px;           
+    gap: 5px;           
   }
   
 .logo img {
@@ -104,6 +104,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin: 100px;
 }
 
 .produtos{
@@ -163,7 +164,6 @@ label{
         color: black;
         background-color: #60A5FA;
         border-radius: 6px;
-        box-shadow: 5px 5px 5px rgb(136, 135, 135);
         text-decoration: none;
         padding: 6px;
         
@@ -249,6 +249,7 @@ label{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        margin: 50px;
     }
     
     .produtos{
@@ -305,7 +306,6 @@ label{
         color: black;
         background-color: #60A5FA;
         border-radius: 6px;
-        box-shadow: 5px 5px 5px rgb(136, 135, 135);
         text-decoration: none;
         padding: 6px;
         
@@ -383,6 +383,7 @@ label{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 35px;
     }
     
     .produtos{
