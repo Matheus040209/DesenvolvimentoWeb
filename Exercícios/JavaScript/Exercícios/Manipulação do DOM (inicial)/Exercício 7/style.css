@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    font-size: 70px;
+}
+
+.grade-imagens{
+
+display: flex;
+justify-content: center;
+margin-top: 200px;
+}
+
+.principal{
+    justify-content: center;
+}
+
+img{
+    height: 200px;
+    width: 300px;
+
+}
