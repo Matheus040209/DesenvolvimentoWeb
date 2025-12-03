@@ -3,19 +3,25 @@ h1{
     font-size: 70px;
 }
 
-.grade-imagens{
-
-display: flex;
-justify-content: center;
-margin-top: 200px;
+#principal {
+    height: 280px;
+    width: 390px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
 }
 
-.principal{
+.imagens {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
 }
 
-img{
-    height: 200px;
-    width: 300px;
-
+.imagens img {
+    height: 120px;
+    width: 160px;
+    border-radius: 5px;
+    object-fit: cover;
 }
