@@ -8,6 +8,7 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="./CSS/style.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro Paranormal</title>
@@ -34,10 +35,10 @@
           <div class="collapse navbar-collapse" id="navbarsArquivoOrdem">
             <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Início</a>
+                <a class="nav-link active" href="./index.html">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Criaturas</a>
+                <a class="nav-link" href="#criaturas">Criaturas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Sobrevivência</a>
@@ -67,21 +68,24 @@ Explore, catalogue e prepare-se: a linha entre o mundo natural e o paranormal é
           </p>
 
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button class="btn btn-primary btn-lg px-4">Criaturas</button>
-            <button class="btn btn-outline-secondary btn-lg px-4">
-              Contato
-            </button>
+            <a href="#criaturas" class="btn btn-primary btn-lg px-4">Criaturas</a>
+            <button class="btn btn-primary btn-lg px-4">Contato</button>
           </div>
         </div>
       </div>
 
-      <section class="container py-5">
+      <section id= "criaturas" class="container py-5">
         <h2 class="pb-2 border-bottom">Criaturas Registradas</h2>
       
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
+      
           <div class="col">
             <div class="card h-100 shadow-sm">
+              <img 
+                src="./assets/img/criatura1.jpg" 
+                class="card-img-top" 
+                alt="Imagem do Sussurrador do Vazio">
+      
               <div class="card-body">
                 <h5 class="card-title">Sussurrador do Vazio</h5>
                 <h6 class="card-subtitle mb-2 text-danger">
@@ -95,9 +99,14 @@ Explore, catalogue e prepare-se: a linha entre o mundo natural e o paranormal é
               </div>
             </div>
           </div>
-
+      
           <div class="col">
             <div class="card h-100 shadow-sm">
+              <img 
+                src="./assets/img/criatura2.jpg" 
+                class="card-img-top" 
+                alt="Imagem do Observador Carmesim">
+      
               <div class="card-body">
                 <h5 class="card-title">Observador Carmesim</h5>
                 <h6 class="card-subtitle mb-2 text-warning">
@@ -111,25 +120,30 @@ Explore, catalogue e prepare-se: a linha entre o mundo natural e o paranormal é
               </div>
             </div>
           </div>
-
+      
           <div class="col">
             <div class="card h-100 shadow-sm">
+              <img 
+                src="./assets/img/criatura3.jpg" 
+                class="card-img-top" 
+                alt="Imagem do Umbrolume">
+      
               <div class="card-body">
-                <h5 class="card-title">Eco das Profundezas</h5>
+                <h5 class="card-title">Umbrolume</h5>
                 <h6 class="card-subtitle mb-2 text-success">
                   Nível de Ameaça: Baixo
                 </h6>
                 <p class="card-text">
-                  Manifestação sonora paranormal encontrada em túneis e cavernas,
-                  capaz de desorientar exploradores por longos períodos.
+                  Sombra viva com pontos de luz azul que ronda lugares abandonados, causando medo e desorientação nas vítimas.
                 </p>
                 <a href="#" class="btn btn-outline-dark">Ver Detalhes</a>
               </div>
             </div>
           </div>
-
+      
         </div>
-    </section>
+      </section>
+      
     </main>
 
 
@@ -142,10 +156,10 @@ Explore, catalogue e prepare-se: a linha entre o mundo natural e o paranormal é
 
       <ul class="nav col-md-4 justify-content-end">
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Início</a>
+          <a href="./index.html" class="nav-link px-2 text-body-secondary">Início</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Criaturas</a>
+          <a href="#criaturas" class="nav-link px-2 text-body-secondary">Criaturas</a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link px-2 text-body-secondary">
