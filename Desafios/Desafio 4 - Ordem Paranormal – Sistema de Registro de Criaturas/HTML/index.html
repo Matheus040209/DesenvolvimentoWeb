@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -7,85 +7,156 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro Paranormal</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-xl navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Arquivo da Ordem</a>
-    
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarsArquivoOrdem"
-          aria-controls="navbarsArquivoOrdem"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarsArquivoOrdem">
-          <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./criaturas.html">Criaturas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobrevivência</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    
-    <div class="hero">
-      <div
-        class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
-      >
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
-            Banco de Dados de Criaturas Paranormais
-          </h1>
-          <p class="lead">
-            Após meses de silêncio por parte da Ordem, novos agentes foram
-            finalmente convocados. Antes de encarar o paranormal, vocês terão de
-            reconstruir o Sistema de Registro de Criaturas, destruído em grande
-            parte. Sem esse sistema, a humanidade fica incapaz de identificar,
-            catalogar e compreender as ameaças que a cercam.
-          </p>
-          <div
-            class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
+
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Arquivo da Ordem</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsArquivoOrdem"
+            aria-controls="navbarsArquivoOrdem"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <button
-              type="button"
-              class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
-            >
-              Criaturas
-            </button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsArquivoOrdem">
+            <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Criaturas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobrevivência</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-fill">
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">
+          Banco de Dados de Criaturas Paranormais
+        </h1>
+
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Bem-vindo ao Arquivo Paranormal, a central de registro das criaturas e fenômenos sobrenaturais. Após meses de silêncio da Ordem, novos agentes foram convocados para restaurar o Sistema de Registro de Criaturas, vital para a segurança da humanidade.
+
+Neste site, você encontrará informações detalhadas sobre entidades paranormais, seus níveis de ameaça e relatos de ocorrências. Cada registro é uma peça essencial para reconstruir o conhecimento perdido e permitir que a Ordem continue a proteger o mundo das forças desconhecidas.
+
+Explore, catalogue e prepare-se: a linha entre o mundo natural e o paranormal é mais tênue do que você imagina.
+          </p>
+
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button class="btn btn-primary btn-lg px-4">Criaturas</button>
+            <button class="btn btn-outline-secondary btn-lg px-4">
               Contato
             </button>
           </div>
         </div>
-        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-          <img
-            class="rounded-lg-3"
-            src="bootstrap-docs.png"
-            alt=""
-            width="720"
-          />
-        </div>
       </div>
-    </div>
+
+      <section class="container py-5">
+        <h2 class="pb-2 border-bottom">Criaturas Registradas</h2>
+      
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Sussurrador do Vazio</h5>
+                <h6 class="card-subtitle mb-2 text-danger">
+                  Nível de Ameaça: Alto
+                </h6>
+                <p class="card-text">
+                  Entidade invisível que se manifesta por vozes na mente das vítimas,
+                  levando-as à paranoia extrema e ao isolamento total.
+                </p>
+                <a href="#" class="btn btn-outline-dark">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Observador Carmesim</h5>
+                <h6 class="card-subtitle mb-2 text-warning">
+                  Nível de Ameaça: Médio
+                </h6>
+                <p class="card-text">
+                  Criatura humanoide de olhos vermelhos que surge em locais abandonados.
+                  Quanto mais é observada, mais próxima ela se torna.
+                </p>
+                <a href="#" class="btn btn-outline-dark">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Eco das Profundezas</h5>
+                <h6 class="card-subtitle mb-2 text-success">
+                  Nível de Ameaça: Baixo
+                </h6>
+                <p class="card-text">
+                  Manifestação sonora paranormal encontrada em túneis e cavernas,
+                  capaz de desorientar exploradores por longos períodos.
+                </p>
+                <a href="#" class="btn btn-outline-dark">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+    </main>
+
+
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top"
+    >
+      <p class="col-md-4 mb-0 text-body-secondary">
+        © 2026 Arquivo da Ordem
+      </p>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Início</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Criaturas</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">
+            Sobrevivência
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Contato</a>
+        </li>
+      </ul>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
