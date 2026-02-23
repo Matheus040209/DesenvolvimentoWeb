@@ -16,11 +16,19 @@ O objetivo deste repositório é registrar e demonstrar a evolução no aprendiz
 
 
 
-HTML5 – Estrutura e marcação das páginas
+- HTML
 
 
+- CSS
 
-CSS3 – Estilização, layout e responsividade
+
+- JavaScript
+
+
+- NodeJS
+
+
+- Bootstrap
 
 
 
