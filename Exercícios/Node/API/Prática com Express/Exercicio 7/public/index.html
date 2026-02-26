@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Produtos</title>
+</head>
+<body>
+
+  <h1>Produtos</h1>
+  <button id="carregar">Carregar Produtos</button>
+
+  <ul id="lista-produtos"></ul>
+
+  <script>
+    const botao = document.getElementById("carregar");
+    const lista = document.getElementById("lista-produtos");
+
+    botao.addEventListener("click", () => {
+      lista.innerHTML = "";
+
+      fetch("/produtos")
+        .then(response => response.json())
+        .then(produtos => {
+          if (produtos.length === 0) {
+            lista.innerHTML = "<li>Nenhum produto cadastrado</li>";
+            return;
+          }
+
+          produtos.forEach(p => {
+            const li = document.createElement("li");
+            li.textContent = `ID: ${p.id} | Nome: ${p.nome} | Preço: R$ ${p.preco}`;
+            lista.appendChild(li);
+          });
+        })
+        .catch(err => {
+          console.error(err);
+          lista.innerHTML = "<li>Erro ao carregar produtos</li>";
+        });
+    });
+  </script>
+
+</body>
+</html>
