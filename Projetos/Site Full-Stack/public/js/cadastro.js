@@ -7,9 +7,12 @@ form.addEventListener("submit", async function (event) {
 
   const nome = document.getElementById("nome").value;
   const idade = document.getElementById("idade").value;
+  const email = document.getElementById("email").value;
+
 
   const usuario = {
     nome,
+    email,
     idade: Number(idade)
   };
 
@@ -23,11 +26,11 @@ form.addEventListener("submit", async function (event) {
       body: JSON.stringify(usuario)
     });
 
-    if (!resposta.ok) {
-      throw new Error("Erro ao cadastrar usuário");
-    }
-
     const dados = await resposta.json();
+
+    if (!resposta.ok) {
+      throw new Error(dados.erro);
+    }
 
     mensagem.textContent = `Usuário ${dados.nome} cadastrado com sucesso!`;
     mensagem.style.color = "green";
@@ -36,7 +39,7 @@ form.addEventListener("submit", async function (event) {
 
   } catch (erro) {
 
-    mensagem.textContent = "Erro ao cadastrar usuário.";
+    mensagem.textContent = erro.message;
     mensagem.style.color = "red";
 
     console.error(erro);

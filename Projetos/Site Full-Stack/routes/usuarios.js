@@ -20,15 +20,39 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    const { nome, idade } = req.body;
+    const { nome, idade, email } = req.body;
 
-    if (!nome) {
-        return res.status(400).json({ erro: "Nome é obrigatório" });
+    if (!nome || nome.trim() === "") {
+        return res.status(400).json({ erro: "Nome não pode ser vazio" });
     }
+
+    if (!email || email.trim() === "") {
+        return res.status(400).json({ erro: "Nome não pode ser vazio" });
+    }
+
+    if (!email.includes("@")){
+        return res.status(400).json({ erro: "Email inválido" });
+
+    }
+    
+    if (nome.trim().length < 3){
+        return res.status(400).json({ erro: "Nome deve conter no minimo 3 caracteres" });
+    }
+
+    if(idade<0){
+        return res.status(400).json({ erro: "Idade deve ser maior que 0" });
+    }
+
+    if (idade>120){
+        return res.status(400).json({ erro: "Idade deve ser menor que 120" });
+    }
+
+    
 
     const novoUsuario = {
         id: proximoId++,
         nome,
+        email,
         idade
     };
 
@@ -39,7 +63,7 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
     const id = Number(req.params.id);
-    const { nome, idade } = req.body;
+    const { nome, idade, email } = req.body;
 
     const usuario = usuarios.find(u => u.id === id);
 
@@ -49,6 +73,8 @@ router.put('/:id', (req, res) => {
 
     usuario.nome = nome ?? usuario.nome;
     usuario.idade = idade ?? usuario.idade;
+    usuario.idade = email ?? usuario.email;
+
 
     res.json(usuario);
 });
