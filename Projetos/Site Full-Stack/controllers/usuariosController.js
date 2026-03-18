@@ -1,18 +1,18 @@
 const usuariosService = require("../services/usuariosService");
 
-function listarUsuarios(req, res) {
+async function listarUsuarios(req, res) {
 
-    const usuarios = usuariosService.listarUsuarios();
+    const usuarios = await usuariosService.listarUsuarios();
 
     res.json(usuarios);
 
 }
 
-function buscarUsuario(req, res) {
+async function buscarUsuario(req, res) {
 
     const id = Number(req.params.id);
 
-    const usuario = usuariosService.buscarUsuarioPorId(id);
+    const usuario = await usuariosService.buscarUsuarioPorId(id);
 
     if (!usuario) {
         return res.status(404).json({
@@ -24,13 +24,13 @@ function buscarUsuario(req, res) {
 
 }
 
-function criarUsuario(req, res) {
+async function criarUsuario(req, res) {
 
     try {
 
         const { nome, idade } = req.body;
 
-        const usuario = usuariosService.criarUsuario(nome, idade);
+        const usuario = await usuariosService.criarUsuario(nome, idade);
 
         res.status(201).json({
             mensagem: "Usuário criado com sucesso",
@@ -47,12 +47,12 @@ function criarUsuario(req, res) {
 
 }
 
-function atualizarUsuario(req, res) {
+async function atualizarUsuario(req, res) {
 
     const id = Number(req.params.id);
     const { nome, idade } = req.body;
 
-    const usuario = usuariosService.atualizarUsuario(id, nome, idade);
+    const usuario = await usuariosService.atualizarUsuario(id, nome, idade);
 
     if (!usuario) {
         return res.status(404).json({
@@ -64,11 +64,11 @@ function atualizarUsuario(req, res) {
 
 }
 
-function deletarUsuario(req, res) {
+async function deletarUsuario(req, res) {
 
     const id = Number(req.params.id);
 
-    const removido = usuariosService.deletarUsuario(id);
+    const removido = await usuariosService.deletarUsuario(id);
 
     if (!removido) {
         return res.status(404).json({

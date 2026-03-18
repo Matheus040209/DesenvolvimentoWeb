@@ -7,12 +7,10 @@ form.addEventListener("submit", async function (event) {
 
   const nome = document.getElementById("nome").value;
   const idade = document.getElementById("idade").value;
-  const email = document.getElementById("email").value;
 
 
   const usuario = {
     nome,
-    email,
     idade: Number(idade)
   };
 
@@ -32,7 +30,7 @@ form.addEventListener("submit", async function (event) {
       throw new Error(dados.erro);
     }
 
-    mensagem.textContent = `Usuário ${dados.nome} cadastrado com sucesso!`;
+    mensagem.textContent = `Usuário ${dados.usuario.nome} cadastrado com sucesso!`;
     mensagem.style.color = "green";
 
     form.reset();
