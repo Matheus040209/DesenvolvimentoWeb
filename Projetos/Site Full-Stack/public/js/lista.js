@@ -43,7 +43,7 @@ async function carregarUsuarios() {
   
       const li = document.createElement("li");
   
-      li.textContent = `${usuario.nome} - ${usuario.idade} anos - ${usuario.email}`;
+      li.textContent = `${usuario.nome} - ${usuario.idade}`;
   
       lista.appendChild(li);
   
