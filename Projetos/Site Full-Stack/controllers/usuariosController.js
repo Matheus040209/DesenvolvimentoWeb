@@ -80,10 +80,19 @@ async function deletarUsuario(req, res) {
 
 }
 
+async function contarUsuarios(req, res) {
+
+    const total = await usuariosService.contarUsuarios();
+
+    res.json({ total });
+
+}
+
 module.exports = {
     listarUsuarios,
     buscarUsuario,
     criarUsuario,
     atualizarUsuario,
-    deletarUsuario
+    deletarUsuario,
+    contarUsuarios
 };

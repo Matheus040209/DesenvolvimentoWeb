@@ -68,10 +68,21 @@ async function deletarUsuario(id) {
 
 }
 
+async function contarUsuarios() {
+    const resultado = await pool.query(
+        "SELECT COUNT(*) AS total FROM usuarios"
+    );
+
+    console.log("SQL result:", resultado.rows[0]);
+    return parseInt(resultado.rows[0].total, 10);
+}
+
+
 module.exports = {
     listarUsuarios,
     buscarUsuarioPorId,
     criarUsuario,
     atualizarUsuario,
-    deletarUsuario
+    deletarUsuario,
+    contarUsuarios
 };
