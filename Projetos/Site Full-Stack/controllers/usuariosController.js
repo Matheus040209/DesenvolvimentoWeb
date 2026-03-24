@@ -8,7 +8,7 @@ async function listarUsuarios(req, res) {
 
 }
 
-async function buscarUsuario(req, res) {
+async function buscarUsuarioId(req, res) {
 
     const id = Number(req.params.id);
 
@@ -24,13 +24,46 @@ async function buscarUsuario(req, res) {
 
 }
 
+async function buscarUsuarioIdade(req, res) {
+
+    const idade = Number(req.params.idade);
+
+    const usuario = await usuariosService.buscarUsuarioPorIdade(idade);
+
+    if (!usuario) {
+        return res.status(404).json({
+            erro: "Usuário não encontrado"
+        });
+    }
+
+    res.json(usuario);
+
+}
+
+async function ordenarNomes(req, res) {
+
+    const nome = Number(req.params.nome);
+
+    const usuario = await usuariosService.ordenarNomes(nome);
+
+    if (!usuario) {
+        return res.status(404).json({
+            erro: "Usuário não encontrado"
+        });
+    }
+
+    res.json(usuario);
+
+}
+
+
 async function criarUsuario(req, res) {
 
     try {
 
-        const { nome, idade } = req.body;
+        const { nome, idade, email } = req.body;
 
-        const usuario = await usuariosService.criarUsuario(nome, idade);
+        const usuario = await usuariosService.criarUsuario(nome, idade, email);
 
         res.status(201).json({
             mensagem: "Usuário criado com sucesso",
@@ -50,9 +83,9 @@ async function criarUsuario(req, res) {
 async function atualizarUsuario(req, res) {
 
     const id = Number(req.params.id);
-    const { nome, idade } = req.body;
+    const { nome, idade, email } = req.body;
 
-    const usuario = await usuariosService.atualizarUsuario(id, nome, idade);
+    const usuario = await usuariosService.atualizarUsuario(id, nome, idade, email);
 
     if (!usuario) {
         return res.status(404).json({
@@ -90,7 +123,9 @@ async function contarUsuarios(req, res) {
 
 module.exports = {
     listarUsuarios,
-    buscarUsuario,
+    buscarUsuarioId,
+    buscarUsuarioIdade,
+    ordenarNomes,
     criarUsuario,
     atualizarUsuario,
     deletarUsuario,

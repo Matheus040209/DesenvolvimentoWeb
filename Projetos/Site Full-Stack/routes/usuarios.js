@@ -7,12 +7,17 @@ router.get("/", usuariosController.listarUsuarios);
 
 router.get("/total", usuariosController.contarUsuarios);
 
-router.get("/:id", usuariosController.buscarUsuario);
+router.get("/id/:id", usuariosController.buscarUsuarioId);
+
+router.get("/idade/:idade", usuariosController.buscarUsuarioIdade);
+
+router.get("/nomesOrdenados", usuariosController.ordenarNomes);
 
 router.post("/", usuariosController.criarUsuario);
 
-router.put("/:id", usuariosController.atualizarUsuario);
+router.put("/id/:id", usuariosController.atualizarUsuario);
 
-router.delete("/:id", usuariosController.deletarUsuario);
+router.delete("/id/:id", usuariosController.deletarUsuario);
+
 
 module.exports = router;

@@ -22,7 +22,27 @@ async function buscarUsuarioPorId(id) {
 
 }
 
-async function criarUsuario(nome, idade) {
+async function buscarUsuarioPorIdade(idade) {
+
+    const resultado = await pool.query(
+        "SELECT * FROM usuarios WHERE idade = $1",
+        [idade]
+    );
+
+    return resultado.rows[0];
+
+}
+async function ordenarNomes() {
+
+    const resultado = await pool.query(
+        "SELECT id, idade, nome FROM usuarios ORDER BY nome ASC;",
+    );
+
+    return resultado.rows;
+
+}
+
+async function criarUsuario(nome, idade, email) {
 
     if (!nome || nome.trim() === "") {
         throw new Error("Nome é obrigatório");
@@ -30,27 +50,28 @@ async function criarUsuario(nome, idade) {
 
     const resultado = await pool.query(
         `
-        INSERT INTO usuarios (nome, idade)
-        VALUES ($1, $2)
+        INSERT INTO usuarios (nome, idade, email)
+        VALUES ($1, $2, $3)
         RETURNING *
         `,
-        [nome, idade]
+        [nome, idade, email]
     );
 
     return resultado.rows[0];
 
 }
-async function atualizarUsuario(id, nome, idade) {
+async function atualizarUsuario(id, nome, idade, email) {
 
     const resultado = await pool.query(
         `
         UPDATE usuarios
         SET nome = COALESCE($1, nome),
-            idade = COALESCE($2, idade)
-        WHERE id = $3
+            idade = COALESCE($2, idade),
+            email = COALESCE($3, email)
+        WHERE id = $4
         RETURNING *
         `,
-        [nome, idade, id]
+        [nome, idade, id, email]
     );
 
     return resultado.rows[0];
@@ -73,7 +94,6 @@ async function contarUsuarios() {
         "SELECT COUNT(*) AS total FROM usuarios"
     );
 
-    console.log("SQL result:", resultado.rows[0]);
     return parseInt(resultado.rows[0].total, 10);
 }
 
@@ -81,6 +101,8 @@ async function contarUsuarios() {
 module.exports = {
     listarUsuarios,
     buscarUsuarioPorId,
+    buscarUsuarioPorIdade,
+    ordenarNomes,
     criarUsuario,
     atualizarUsuario,
     deletarUsuario,
