@@ -97,6 +97,15 @@ async function contarUsuarios() {
     return parseInt(resultado.rows[0].total, 10);
 }
 
+async function estatisticas() {
+    const resultado = await pool.query(
+        "SELECT COUNT(*) AS total, ROUND(AVG(idade)::numeric, 2) AS media_idade, MAX(idade) AS maior_idade, MIN(idade) AS menor_idade FROM usuarios;"
+    );
+
+    return resultado.rows[0];
+
+}
+
 
 module.exports = {
     listarUsuarios,
@@ -106,5 +115,6 @@ module.exports = {
     criarUsuario,
     atualizarUsuario,
     deletarUsuario,
-    contarUsuarios
+    contarUsuarios,
+    estatisticas
 };

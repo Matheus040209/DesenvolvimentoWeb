@@ -13,6 +13,8 @@ router.get("/idade/:idade", usuariosController.buscarUsuarioIdade);
 
 router.get("/nomesOrdenados", usuariosController.ordenarNomes);
 
+router.get("/estatisticas", usuariosController.estatisticas);
+
 router.post("/", usuariosController.criarUsuario);
 
 router.put("/id/:id", usuariosController.atualizarUsuario);

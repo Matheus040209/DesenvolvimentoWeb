@@ -4,6 +4,7 @@ async function listarUsuarios(req, res) {
 
     const usuarios = await usuariosService.listarUsuarios();
 
+
     res.json(usuarios);
 
 }
@@ -121,6 +122,15 @@ async function contarUsuarios(req, res) {
 
 }
 
+
+async function estatisticas(req, res) {
+
+    const estatisticas = await usuariosService.estatisticas();
+
+    res.json(estatisticas);
+
+}
+
 module.exports = {
     listarUsuarios,
     buscarUsuarioId,
@@ -129,5 +139,6 @@ module.exports = {
     criarUsuario,
     atualizarUsuario,
     deletarUsuario,
-    contarUsuarios
+    contarUsuarios,
+    estatisticas
 };
